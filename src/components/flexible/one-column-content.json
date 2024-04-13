@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_flexible_one_column_contents",
+  "info": {
+    "displayName": "OneColumnContent",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "Content": {
+      "type": "blocks"
+    },
+    "hasVideo": {
+      "type": "boolean"
+    },
+    "SectionTitle": {
+      "type": "string"
+    }
+  }
+}

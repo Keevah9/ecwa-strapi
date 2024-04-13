@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_global_contacts",
+  "info": {
+    "displayName": "Contact",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "SectionTitle": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "blocks"
+    },
+    "SubTitle": {
+      "type": "string"
+    }
+  }
+}

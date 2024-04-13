@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_global_grid_items",
+  "info": {
+    "displayName": "GridItems",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SubTitle": {
+      "type": "text"
+    },
+    "Content": {
+      "type": "blocks"
+    },
+    "Icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "LinkLabel": {
+      "type": "string"
+    },
+    "LinkUrl": {
+      "type": "string"
+    },
+    "overrideDesign": {
+      "type": "string"
+    },
+    "Preacher": {
+      "type": "enumeration",
+      "enum": [
+        "Reverend",
+        "Pastor Alebiosu",
+        "Pastor Ajiboye"
+      ]
+    },
+    "BibleVerses": {
+      "type": "text"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "SectionTitle": {
+      "type": "string"
+    }
+  }
+}

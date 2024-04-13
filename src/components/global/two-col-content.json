@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_global_two_col_contents",
+  "info": {
+    "displayName": "TwoColContent",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SubTitle": {
+      "type": "string"
+    },
+    "SectionTitle": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "blocks"
+    },
+    "Items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.grid-items"
+    },
+    "DailyPrayers": {
+      "type": "blocks"
+    }
+  }
+}

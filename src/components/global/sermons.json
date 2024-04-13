@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_global_sermons",
+  "info": {
+    "displayName": "Sermons",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SubTitle": {
+      "type": "string"
+    },
+    "SectionTitle": {
+      "type": "text"
+    },
+    "Sermons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.grid-items"
+    },
+    "all_sermons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::all-sermon.all-sermon"
+    }
+  }
+}

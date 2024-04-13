@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_global_campaign_events",
+  "info": {
+    "displayName": "CampaignEvents",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Date": {
+      "type": "datetime"
+    },
+    "Events": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.grid-items"
+    }
+  }
+}

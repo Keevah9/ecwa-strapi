@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_flexible_two_column_contents",
+  "info": {
+    "displayName": "TwoColumnContent",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "SectionTitle": {
+      "type": "text"
+    },
+    "SectionContent": {
+      "type": "blocks"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "SubTitle": {
+      "type": "string"
+    },
+    "GridItems": {
+      "displayName": "GridItems",
+      "type": "component",
+      "repeatable": true,
+      "component": "global.grid-items"
+    }
+  }
+}

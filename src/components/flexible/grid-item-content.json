@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_flexible_grid_item_contents",
+  "info": {
+    "displayName": "GridItemContent",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "SectionTitle": {
+      "type": "text"
+    },
+    "SectionContent": {
+      "type": "blocks"
+    },
+    "SubTitle": {
+      "type": "string"
+    }
+  }
+}

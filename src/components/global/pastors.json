@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_global_pastors",
+  "info": {
+    "displayName": "Pastors",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "SubTitle": {
+      "type": "string"
+    },
+    "SectionTitle": {
+      "type": "string"
+    },
+    "Pastors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.grid-items"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_global_faqs",
+  "info": {
+    "displayName": "FAQ",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "Question": {
+      "type": "text"
+    },
+    "Answer": {
+      "type": "blocks"
+    }
+  }
+}

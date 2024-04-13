@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_flexible_flexibles",
+  "info": {
+    "displayName": "Flexible",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "TwoColumnContent": {
+      "displayName": "TwoColumnContent",
+      "type": "component",
+      "repeatable": false,
+      "component": "flexible.two-column-content"
+    }
+  }
+}

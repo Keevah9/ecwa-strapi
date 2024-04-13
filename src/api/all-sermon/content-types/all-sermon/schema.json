@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "all_sermons",
+  "info": {
+    "singularName": "all-sermon",
+    "pluralName": "all-sermons",
+    "displayName": "AllSermons"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Sermons": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.grid-items"
+    }
+  }
+}

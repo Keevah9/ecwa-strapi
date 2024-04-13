@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "globals",
+  "info": {
+    "singularName": "global",
+    "pluralName": "globals",
+    "displayName": "Global",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Facebook": {
+      "type": "text"
+    },
+    "Youtube": {
+      "type": "string"
+    },
+    "Instagram": {
+      "type": "string"
+    },
+    "Twitter": {
+      "type": "string"
+    },
+    "PhoneNumber": {
+      "type": "biginteger"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Address": {
+      "type": "text"
+    },
+    "DailyPrayers": {
+      "type": "blocks"
+    }
+  }
+}

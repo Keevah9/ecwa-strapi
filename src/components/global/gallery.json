@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_global_galleries",
+  "info": {
+    "displayName": "Gallery",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "SubTitle": {
+      "type": "string"
+    },
+    "SectionTitle": {
+      "type": "string"
+    },
+    "Gallery": {
+      "type": "component",
+      "repeatable": true,
+      "component": "flexible.gallery"
+    }
+  }
+}

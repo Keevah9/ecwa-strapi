@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Events"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PageTitle": {
+      "type": "text"
+    },
+    "PageIntroductoryContent": {
+      "type": "blocks"
+    },
+    "PageBackgroundImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Pages": {
+      "type": "dynamiczone",
+      "components": [
+        "flexible.featured-image",
+        "flexible.gallery",
+        "flexible.grid-item-content",
+        "flexible.one-column-content",
+        "flexible.two-column-content"
+      ]
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "PageTitle"
+    }
+  }
+}

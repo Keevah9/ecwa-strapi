@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "global_galleries",
+  "info": {
+    "singularName": "global-gallery",
+    "pluralName": "global-galleries",
+    "displayName": "GlobalGallery"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "galleries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::gallery.gallery"
+    }
+  }
+}
