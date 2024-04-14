@@ -156,6 +156,21 @@ export interface GlobalGridItems extends Schema.Component {
   };
 }
 
+export interface GlobalHeroSlider extends Schema.Component {
+  collectionName: 'components_global_hero_sliders';
+  info: {
+    displayName: 'HeroSlider';
+    icon: 'apps';
+  };
+  attributes: {
+    Title: Attribute.String;
+    Content: Attribute.Blocks;
+    Image: Attribute.Media;
+    ButtonLabel: Attribute.String;
+    ButtonUrl: Attribute.String;
+  };
+}
+
 export interface GlobalMinistries extends Schema.Component {
   collectionName: 'components_global_ministries';
   info: {
@@ -231,6 +246,7 @@ declare module '@strapi/types' {
       'global.faq': GlobalFaq;
       'global.gallery': GlobalGallery;
       'global.grid-items': GlobalGridItems;
+      'global.hero-slider': GlobalHeroSlider;
       'global.ministries': GlobalMinistries;
       'global.pastors': GlobalPastors;
       'global.sermons': GlobalSermons;
