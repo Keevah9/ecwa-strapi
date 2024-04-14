@@ -170,6 +170,7 @@ export interface GlobalHeroSlider extends Schema.Component {
     ButtonLabel: Attribute.String;
     ButtonUrl: Attribute.String;
     IsVideo: Attribute.Boolean;
+    SubTitle: Attribute.String;
   };
 }
 

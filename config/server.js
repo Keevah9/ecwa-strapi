@@ -7,4 +7,8 @@ module.exports = ({ env }) => ({
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
   },
+  upload: {
+    maxSize: 100 * 1024 * 1024, // 100 MB (adjust the value as needed)
+  },
+
 });

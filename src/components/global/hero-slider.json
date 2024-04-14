@@ -32,6 +32,9 @@
     },
     "IsVideo": {
       "type": "boolean"
+    },
+    "SubTitle": {
+      "type": "string"
     }
   }
 }
