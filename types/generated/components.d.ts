@@ -161,6 +161,7 @@ export interface GlobalHeroSlider extends Schema.Component {
   info: {
     displayName: 'HeroSlider';
     icon: 'apps';
+    description: '';
   };
   attributes: {
     Title: Attribute.String;
@@ -168,6 +169,7 @@ export interface GlobalHeroSlider extends Schema.Component {
     Image: Attribute.Media;
     ButtonLabel: Attribute.String;
     ButtonUrl: Attribute.String;
+    IsVideo: Attribute.Boolean;
   };
 }
 
