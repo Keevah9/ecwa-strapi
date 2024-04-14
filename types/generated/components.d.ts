@@ -70,6 +70,7 @@ export interface FlexibleTwoColumnContent extends Schema.Component {
   info: {
     displayName: 'TwoColumnContent';
     icon: 'apps';
+    description: '';
   };
   attributes: {
     SectionTitle: Attribute.Text;
@@ -77,6 +78,7 @@ export interface FlexibleTwoColumnContent extends Schema.Component {
     Image: Attribute.Media;
     SubTitle: Attribute.String;
     GridItems: Attribute.Component<'global.grid-items', true>;
+    FlipContent: Attribute.Boolean;
   };
 }
 
