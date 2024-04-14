@@ -1,16 +1,16 @@
 {
-  "collectionName": "components_flexible_two_column_contents",
+  "collectionName": "components_global_hero_sliders",
   "info": {
-    "displayName": "TwoColumnContent",
+    "displayName": "HeroSlider",
     "icon": "apps",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "SectionTitle": {
-      "type": "text"
+    "Title": {
+      "type": "string"
     },
-    "SectionContent": {
+    "Content": {
       "type": "blocks"
     },
     "Image": {
@@ -24,16 +24,13 @@
         "audios"
       ]
     },
-    "SubTitle": {
+    "ButtonLabel": {
       "type": "string"
     },
-    "GridItems": {
-      "displayName": "GridItems",
-      "type": "component",
-      "repeatable": true,
-      "component": "global.grid-items"
+    "ButtonUrl": {
+      "type": "string"
     },
-    "FlipContent": {
+    "IsVideo": {
       "type": "boolean"
     }
   }

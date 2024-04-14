@@ -1146,6 +1146,7 @@ export interface ApiHomepageHomepage extends Schema.SingleType {
     Ministries: Attribute.Component<'global.ministries'>;
     Gallery: Attribute.Component<'global.gallery'>;
     Pastors: Attribute.Component<'global.pastors'>;
+    HeroSlider: Attribute.Component<'global.hero-slider', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

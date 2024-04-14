@@ -74,6 +74,12 @@
       "type": "component",
       "repeatable": false,
       "component": "global.pastors"
+    },
+    "HeroSlider": {
+      "displayName": "HeroSlider",
+      "type": "component",
+      "repeatable": true,
+      "component": "global.hero-slider"
     }
   }
 }
