@@ -10,9 +10,6 @@
     "Title": {
       "type": "string"
     },
-    "Content": {
-      "type": "blocks"
-    },
     "Image": {
       "type": "media",
       "multiple": false,
@@ -35,6 +32,9 @@
     },
     "SubTitle": {
       "type": "string"
+    },
+    "Content": {
+      "type": "richtext"
     }
   }
 }

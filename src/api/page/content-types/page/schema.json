@@ -15,9 +15,6 @@
     "PageTitle": {
       "type": "text"
     },
-    "PageIntroductoryContent": {
-      "type": "blocks"
-    },
     "PageBackgroundImage": {
       "type": "media",
       "multiple": false,
@@ -41,6 +38,12 @@
     "Slug": {
       "type": "uid",
       "targetField": "PageTitle"
+    },
+    "PageBackground": {
+      "type": "string"
+    },
+    "PageIntroductoryContent": {
+      "type": "richtext"
     }
   }
 }

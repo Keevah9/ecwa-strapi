@@ -48,9 +48,9 @@ export interface FlexibleGridItemContent extends Schema.Component {
   };
   attributes: {
     SectionTitle: Attribute.Text;
-    SectionContent: Attribute.Blocks;
     SubTitle: Attribute.String;
     GridItems: Attribute.Component<'global.grid-items', true>;
+    SectionContent: Attribute.RichText;
   };
 }
 
@@ -62,10 +62,10 @@ export interface FlexibleOneColumnContent extends Schema.Component {
     description: '';
   };
   attributes: {
-    Content: Attribute.Blocks;
     hasVideo: Attribute.Boolean;
     SectionTitle: Attribute.String;
     override: Attribute.String;
+    Content: Attribute.RichText;
   };
 }
 
@@ -78,12 +78,12 @@ export interface FlexibleTwoColumnContent extends Schema.Component {
   };
   attributes: {
     SectionTitle: Attribute.Text;
-    SectionContent: Attribute.Blocks;
     Image: Attribute.Media;
     SubTitle: Attribute.String;
     GridItems: Attribute.Component<'global.grid-items', true>;
     FlipContent: Attribute.Boolean;
     override: Attribute.Boolean;
+    SectionContent: Attribute.RichText;
   };
 }
 
@@ -105,11 +105,12 @@ export interface GlobalContact extends Schema.Component {
   info: {
     displayName: 'Contact';
     icon: 'apps';
+    description: '';
   };
   attributes: {
     SectionTitle: Attribute.String;
-    Content: Attribute.Blocks;
     SubTitle: Attribute.String;
+    Content: Attribute.RichText;
   };
 }
 
@@ -118,10 +119,11 @@ export interface GlobalFaq extends Schema.Component {
   info: {
     displayName: 'FAQ';
     icon: 'apps';
+    description: '';
   };
   attributes: {
     Question: Attribute.Text;
-    Answer: Attribute.Blocks;
+    Answer: Attribute.RichText;
   };
 }
 
@@ -147,7 +149,6 @@ export interface GlobalGridItems extends Schema.Component {
   };
   attributes: {
     SubTitle: Attribute.Text;
-    Content: Attribute.Blocks;
     Icon: Attribute.Media;
     LinkLabel: Attribute.String;
     LinkUrl: Attribute.String;
@@ -158,6 +159,7 @@ export interface GlobalGridItems extends Schema.Component {
     BibleVerses: Attribute.Text;
     Date: Attribute.Date;
     SectionTitle: Attribute.String;
+    Content: Attribute.RichText;
   };
 }
 
@@ -170,12 +172,12 @@ export interface GlobalHeroSlider extends Schema.Component {
   };
   attributes: {
     Title: Attribute.String;
-    Content: Attribute.Blocks;
     Image: Attribute.Media;
     ButtonLabel: Attribute.String;
     ButtonUrl: Attribute.String;
     IsVideo: Attribute.Boolean;
     SubTitle: Attribute.String;
+    Content: Attribute.RichText;
   };
 }
 
@@ -197,6 +199,7 @@ export interface GlobalPastors extends Schema.Component {
   info: {
     displayName: 'Pastors';
     icon: 'apps';
+    description: '';
   };
   attributes: {
     SubTitle: Attribute.String;
@@ -234,9 +237,9 @@ export interface GlobalTwoColContent extends Schema.Component {
   attributes: {
     SubTitle: Attribute.String;
     SectionTitle: Attribute.String;
-    Content: Attribute.Blocks;
     Items: Attribute.Component<'global.grid-items', true>;
     DailyPrayers: Attribute.Blocks;
+    Content: Attribute.RichText;
   };
 }
 

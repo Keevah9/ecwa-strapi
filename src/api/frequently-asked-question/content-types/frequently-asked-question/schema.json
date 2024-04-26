@@ -4,7 +4,8 @@
   "info": {
     "singularName": "frequently-asked-question",
     "pluralName": "frequently-asked-questions",
-    "displayName": "FrequentlyAskedQuestions"
+    "displayName": "FrequentlyAskedQuestions",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,18 +15,16 @@
     "PageTitle": {
       "type": "text"
     },
-    "PageIntroductoryContent": {
-      "type": "blocks"
-    },
     "PageBackgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Slug": {
       "type": "uid",
@@ -36,6 +35,9 @@
       "type": "component",
       "repeatable": true,
       "component": "global.faq"
+    },
+    "PageIntroductoryContent": {
+      "type": "richtext"
     }
   }
 }

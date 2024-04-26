@@ -912,13 +912,13 @@ export interface ApiEventEvent extends Schema.CollectionType {
     singularName: 'event';
     pluralName: 'events';
     displayName: 'Events';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     PageTitle: Attribute.Text;
-    PageIntroductoryContent: Attribute.Blocks;
     PageBackgroundImage: Attribute.Media;
     Pages: Attribute.DynamicZone<
       [
@@ -930,6 +930,8 @@ export interface ApiEventEvent extends Schema.CollectionType {
       ]
     >;
     Slug: Attribute.UID<'api::event.event', 'PageTitle'>;
+    PageBackground: Attribute.String;
+    PageIntroductoryContent: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -955,19 +957,20 @@ export interface ApiFrequentlyAskedQuestionFrequentlyAskedQuestion
     singularName: 'frequently-asked-question';
     pluralName: 'frequently-asked-questions';
     displayName: 'FrequentlyAskedQuestions';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     PageTitle: Attribute.Text;
-    PageIntroductoryContent: Attribute.Blocks;
     PageBackgroundImage: Attribute.Media;
     Slug: Attribute.UID<
       'api::frequently-asked-question.frequently-asked-question',
       'PageTitle'
     >;
     FAQs: Attribute.Component<'global.faq', true>;
+    PageIntroductoryContent: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1036,7 +1039,7 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
     PhoneNumber: Attribute.BigInteger;
     Email: Attribute.Email;
     Address: Attribute.Text;
-    DailyPrayers: Attribute.Blocks;
+    DailyPrayers: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1136,7 +1139,6 @@ export interface ApiHomepageHomepage extends Schema.SingleType {
   };
   attributes: {
     PageTitle: Attribute.Text;
-    PageIntroductoryContent: Attribute.Blocks;
     PageBackgroundImage: Attribute.Media;
     Slug: Attribute.UID<'api::homepage.homepage', 'PageTitle'>;
     Campaigns: Attribute.Component<'global.campaign-events'>;
@@ -1147,6 +1149,7 @@ export interface ApiHomepageHomepage extends Schema.SingleType {
     Gallery: Attribute.Component<'global.gallery'>;
     Pastors: Attribute.Component<'global.pastors'>;
     HeroSlider: Attribute.Component<'global.hero-slider', true>;
+    PageIntroductoryContent: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1178,7 +1181,6 @@ export interface ApiMinistryMinistry extends Schema.CollectionType {
   };
   attributes: {
     PageTitle: Attribute.Text;
-    PageIntroductoryContent: Attribute.Blocks;
     PageBackgroundImage: Attribute.Media;
     Pages: Attribute.DynamicZone<
       [
@@ -1190,6 +1192,8 @@ export interface ApiMinistryMinistry extends Schema.CollectionType {
       ]
     >;
     Slug: Attribute.UID<'api::ministry.ministry', 'PageTitle'>;
+    PageIntroductoryContent: Attribute.RichText;
+    PageBackground: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1221,7 +1225,6 @@ export interface ApiPagePage extends Schema.CollectionType {
   };
   attributes: {
     PageTitle: Attribute.Text;
-    PageIntroductoryContent: Attribute.Blocks;
     PageBackgroundImage: Attribute.Media;
     Pages: Attribute.DynamicZone<
       [
@@ -1232,6 +1235,8 @@ export interface ApiPagePage extends Schema.CollectionType {
       ]
     >;
     Slug: Attribute.UID<'api::page.page', 'PageTitle'>;
+    PageBackground: Attribute.String;
+    PageIntroductoryContent: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1248,13 +1253,13 @@ export interface ApiSermonSermon extends Schema.CollectionType {
     singularName: 'sermon';
     pluralName: 'sermons';
     displayName: 'Sermon';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     PageTitle: Attribute.Text;
-    PageIntroductoryContent: Attribute.Blocks;
     PageBackgroundImage: Attribute.Media;
     Slug: Attribute.UID<'api::sermon.sermon', 'PageTitle'>;
     Pages: Attribute.DynamicZone<
@@ -1266,6 +1271,8 @@ export interface ApiSermonSermon extends Schema.CollectionType {
         'flexible.two-column-content'
       ]
     >;
+    PageIntroductoryContent: Attribute.RichText;
+    PageBackground: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
