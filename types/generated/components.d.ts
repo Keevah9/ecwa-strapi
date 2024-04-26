@@ -66,6 +66,7 @@ export interface FlexibleOneColumnContent extends Schema.Component {
     SectionTitle: Attribute.String;
     override: Attribute.String;
     Content: Attribute.RichText;
+    OneColMultipleLists: Attribute.Component<'global.grid-items', true>;
   };
 }
 
