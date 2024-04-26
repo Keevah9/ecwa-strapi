@@ -19,7 +19,7 @@ module.exports = ({ env }) => ({
                 cloud_name: env('CLOUDINARY_NAME'),
                 api_key: env('CLOUDINARY_KEY'),
                 api_secret: env('CLOUDINARY_SECRET'),
-                sizeLimit: 250 * 1024 * 1024,
+                sizeLimit: 250 * 3024 * 3024,
             },
             actionOptions: {
                 upload: {},

@@ -35,6 +35,9 @@
     },
     "FlipContent": {
       "type": "boolean"
+    },
+    "override": {
+      "type": "boolean"
     }
   }
 }

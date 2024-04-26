@@ -44,11 +44,13 @@ export interface FlexibleGridItemContent extends Schema.Component {
   info: {
     displayName: 'GridItemContent';
     icon: 'apps';
+    description: '';
   };
   attributes: {
     SectionTitle: Attribute.Text;
     SectionContent: Attribute.Blocks;
     SubTitle: Attribute.String;
+    GridItems: Attribute.Component<'global.grid-items', true>;
   };
 }
 
@@ -57,11 +59,13 @@ export interface FlexibleOneColumnContent extends Schema.Component {
   info: {
     displayName: 'OneColumnContent';
     icon: 'apps';
+    description: '';
   };
   attributes: {
     Content: Attribute.Blocks;
     hasVideo: Attribute.Boolean;
     SectionTitle: Attribute.String;
+    override: Attribute.String;
   };
 }
 
@@ -79,6 +83,7 @@ export interface FlexibleTwoColumnContent extends Schema.Component {
     SubTitle: Attribute.String;
     GridItems: Attribute.Component<'global.grid-items', true>;
     FlipContent: Attribute.Boolean;
+    override: Attribute.Boolean;
   };
 }
 
