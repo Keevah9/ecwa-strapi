@@ -18,6 +18,11 @@
     },
     "Content": {
       "type": "richtext"
+    },
+    "OneColMultipleLists": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.grid-items"
     }
   }
 }
