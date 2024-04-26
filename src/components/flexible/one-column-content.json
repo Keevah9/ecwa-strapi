@@ -7,9 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "Content": {
-      "type": "blocks"
-    },
     "hasVideo": {
       "type": "boolean"
     },
@@ -18,6 +15,9 @@
     },
     "override": {
       "type": "string"
+    },
+    "Content": {
+      "type": "richtext"
     }
   }
 }

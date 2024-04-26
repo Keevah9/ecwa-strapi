@@ -10,9 +10,6 @@
     "SectionTitle": {
       "type": "text"
     },
-    "SectionContent": {
-      "type": "blocks"
-    },
     "SubTitle": {
       "type": "string"
     },
@@ -20,6 +17,9 @@
       "type": "component",
       "repeatable": true,
       "component": "global.grid-items"
+    },
+    "SectionContent": {
+      "type": "richtext"
     }
   }
 }

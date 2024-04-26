@@ -13,9 +13,6 @@
     "SectionTitle": {
       "type": "string"
     },
-    "Content": {
-      "type": "blocks"
-    },
     "Items": {
       "type": "component",
       "repeatable": true,
@@ -23,6 +20,9 @@
     },
     "DailyPrayers": {
       "type": "blocks"
+    },
+    "Content": {
+      "type": "richtext"
     }
   }
 }

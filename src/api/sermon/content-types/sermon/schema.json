@@ -4,7 +4,8 @@
   "info": {
     "singularName": "sermon",
     "pluralName": "sermons",
-    "displayName": "Sermon"
+    "displayName": "Sermon",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,18 +15,16 @@
     "PageTitle": {
       "type": "text"
     },
-    "PageIntroductoryContent": {
-      "type": "blocks"
-    },
     "PageBackgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Slug": {
       "type": "uid",
@@ -40,6 +39,12 @@
         "flexible.one-column-content",
         "flexible.two-column-content"
       ]
+    },
+    "PageIntroductoryContent": {
+      "type": "richtext"
+    },
+    "PageBackground": {
+      "type": "string"
     }
   }
 }

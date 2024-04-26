@@ -10,9 +10,6 @@
     "SubTitle": {
       "type": "text"
     },
-    "Content": {
-      "type": "blocks"
-    },
     "Icon": {
       "type": "media",
       "multiple": false,
@@ -49,6 +46,9 @@
     },
     "SectionTitle": {
       "type": "string"
+    },
+    "Content": {
+      "type": "richtext"
     }
   }
 }

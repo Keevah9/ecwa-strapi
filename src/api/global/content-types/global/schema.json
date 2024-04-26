@@ -34,7 +34,7 @@
       "type": "text"
     },
     "DailyPrayers": {
-      "type": "blocks"
+      "type": "richtext"
     }
   }
 }
