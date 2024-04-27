@@ -8,9 +8,7 @@
   "options": {},
   "attributes": {
     "HasVolunteers": {
-      "type": "component",
-      "repeatable": true,
-      "component": "global.grid-items"
+      "type": "boolean"
     }
   }
 }

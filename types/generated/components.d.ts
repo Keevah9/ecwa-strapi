@@ -54,6 +54,17 @@ export interface FlexibleGridItemContent extends Schema.Component {
   };
 }
 
+export interface FlexibleHasHistory extends Schema.Component {
+  collectionName: 'components_flexible_has_histories';
+  info: {
+    displayName: 'HasHistory';
+    icon: 'apps';
+  };
+  attributes: {
+    HasHistory: Attribute.Boolean;
+  };
+}
+
 export interface FlexibleHasVolunteers extends Schema.Component {
   collectionName: 'components_flexible_has_volunteers';
   info: {
@@ -269,6 +280,7 @@ declare module '@strapi/types' {
       'flexible.flexible': FlexibleFlexible;
       'flexible.gallery': FlexibleGallery;
       'flexible.grid-item-content': FlexibleGridItemContent;
+      'flexible.has-history': FlexibleHasHistory;
       'flexible.has-volunteers': FlexibleHasVolunteers;
       'flexible.one-column-content': FlexibleOneColumnContent;
       'flexible.two-column-content': FlexibleTwoColumnContent;
