@@ -175,6 +175,10 @@ export interface GlobalGridItems extends Schema.Component {
     SectionTitle: Attribute.String;
     Content: Attribute.RichText;
     Image: Attribute.Media;
+    Facebook: Attribute.String;
+    email: Attribute.String;
+    LinkedIn: Attribute.String;
+    Instagram: Attribute.String;
   };
 }
 
