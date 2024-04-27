@@ -73,7 +73,7 @@ export interface FlexibleHasVolunteers extends Schema.Component {
     description: '';
   };
   attributes: {
-    HasVolunteers: Attribute.Component<'global.grid-items', true>;
+    HasVolunteers: Attribute.Boolean;
   };
 }
 
