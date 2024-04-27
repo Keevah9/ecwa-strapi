@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_flexible_has_histories",
+  "info": {
+    "displayName": "HasHistory",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "HasHistory": {
+      "type": "boolean"
+    }
+  }
+}
