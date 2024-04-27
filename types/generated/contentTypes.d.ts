@@ -1232,7 +1232,8 @@ export interface ApiPagePage extends Schema.CollectionType {
         'flexible.gallery',
         'flexible.grid-item-content',
         'flexible.one-column-content',
-        'flexible.two-column-content'
+        'flexible.two-column-content',
+        'flexible.has-history'
       ]
     >;
     Slug: Attribute.UID<'api::page.page', 'PageTitle'>;
