@@ -1040,6 +1040,7 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
     Email: Attribute.Email;
     Address: Attribute.Text;
     DailyPrayers: Attribute.RichText;
+    HasVolunteer: Attribute.Component<'global.ministries'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

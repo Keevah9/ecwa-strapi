@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_flexible_has_volunteers",
+  "info": {
+    "displayName": "HasVolunteers",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "HasVolunteers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.grid-items"
+    }
+  }
+}
