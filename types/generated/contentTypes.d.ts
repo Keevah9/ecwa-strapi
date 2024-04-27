@@ -1240,6 +1240,7 @@ export interface ApiPagePage extends Schema.CollectionType {
     Slug: Attribute.UID<'api::page.page', 'PageTitle'>;
     PageBackground: Attribute.String;
     PageIntroductoryContent: Attribute.RichText;
+    SectionBg: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
