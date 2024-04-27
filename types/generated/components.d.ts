@@ -59,6 +59,7 @@ export interface FlexibleHasVolunteers extends Schema.Component {
   info: {
     displayName: 'HasVolunteers';
     icon: 'apps';
+    description: '';
   };
   attributes: {
     HasVolunteers: Attribute.Component<'global.grid-items', true>;
@@ -173,6 +174,7 @@ export interface GlobalGridItems extends Schema.Component {
     Date: Attribute.Date;
     SectionTitle: Attribute.String;
     Content: Attribute.RichText;
+    Image: Attribute.Media;
   };
 }
 
