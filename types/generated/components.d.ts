@@ -79,11 +79,12 @@ export interface FlexibleHasMinistries extends Schema.Component {
 export interface FlexibleHasServices extends Schema.Component {
   collectionName: 'components_flexible_has_services';
   info: {
-    displayName: 'HasServices';
+    displayName: 'HasSermons';
     icon: 'apps';
+    description: '';
   };
   attributes: {
-    HasServices: Attribute.Boolean;
+    HasSermons: Attribute.Boolean;
   };
 }
 
