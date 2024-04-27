@@ -54,6 +54,17 @@ export interface FlexibleGridItemContent extends Schema.Component {
   };
 }
 
+export interface FlexibleHasVolunteers extends Schema.Component {
+  collectionName: 'components_flexible_has_volunteers';
+  info: {
+    displayName: 'HasVolunteers';
+    icon: 'apps';
+  };
+  attributes: {
+    HasVolunteers: Attribute.Component<'global.grid-items', true>;
+  };
+}
+
 export interface FlexibleOneColumnContent extends Schema.Component {
   collectionName: 'components_flexible_one_column_contents';
   info: {
@@ -67,6 +78,7 @@ export interface FlexibleOneColumnContent extends Schema.Component {
     override: Attribute.String;
     Content: Attribute.RichText;
     OneColMultipleLists: Attribute.Component<'global.grid-items', true>;
+    SubTitle: Attribute.String;
   };
 }
 
@@ -251,6 +263,7 @@ declare module '@strapi/types' {
       'flexible.flexible': FlexibleFlexible;
       'flexible.gallery': FlexibleGallery;
       'flexible.grid-item-content': FlexibleGridItemContent;
+      'flexible.has-volunteers': FlexibleHasVolunteers;
       'flexible.one-column-content': FlexibleOneColumnContent;
       'flexible.two-column-content': FlexibleTwoColumnContent;
       'global.campaign-events': GlobalCampaignEvents;

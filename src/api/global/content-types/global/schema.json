@@ -35,6 +35,11 @@
     },
     "DailyPrayers": {
       "type": "richtext"
+    },
+    "HasVolunteer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.ministries"
     }
   }
 }
