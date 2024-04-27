@@ -1234,13 +1234,19 @@ export interface ApiPagePage extends Schema.CollectionType {
         'flexible.one-column-content',
         'flexible.two-column-content',
         'flexible.has-history',
-        'flexible.has-volunteers'
+        'flexible.has-volunteers',
+        'flexible.has-services',
+        'flexible.has-ministries'
       ]
     >;
     Slug: Attribute.UID<'api::page.page', 'PageTitle'>;
     PageBackground: Attribute.String;
     PageIntroductoryContent: Attribute.RichText;
     SectionBg: Attribute.String;
+    ButtonOne: Attribute.String;
+    ButtonTwo: Attribute.String;
+    ButtonTwoLink: Attribute.String;
+    ButtonOneLink: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
