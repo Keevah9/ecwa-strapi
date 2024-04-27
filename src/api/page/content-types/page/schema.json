@@ -49,6 +49,18 @@
     },
     "SectionBg": {
       "type": "string"
+    },
+    "ButtonOne": {
+      "type": "string"
+    },
+    "ButtonTwo": {
+      "type": "string"
+    },
+    "ButtonTwoLink": {
+      "type": "string"
+    },
+    "ButtonOneLink": {
+      "type": "string"
     }
   }
 }
