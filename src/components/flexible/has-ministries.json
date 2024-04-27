@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_flexible_has_ministries",
+  "info": {
+    "displayName": "HasMinistries",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "HasMinistries": {
+      "type": "boolean"
+    }
+  }
+}

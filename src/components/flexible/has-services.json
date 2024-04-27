@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_flexible_has_services",
+  "info": {
+    "displayName": "HasSermons",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "HasSermons": {
+      "type": "boolean"
+    }
+  }
+}
