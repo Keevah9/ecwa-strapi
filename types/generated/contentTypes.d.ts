@@ -1046,6 +1046,16 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
     Address: Attribute.Text;
     DailyPrayers: Attribute.RichText;
     HasVolunteer: Attribute.Component<'global.ministries'>;
+    galleries: Attribute.Relation<
+      'api::global.global',
+      'oneToMany',
+      'api::gallery.gallery'
+    >;
+    all_sermons: Attribute.Relation<
+      'api::global.global',
+      'oneToOne',
+      'api::all-sermon.all-sermon'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1250,13 +1260,13 @@ export interface ApiPagePage extends Schema.CollectionType {
       ]
     >;
     Slug: Attribute.UID<'api::page.page', 'PageTitle'>;
-    PageBackground: Attribute.String;
     PageIntroductoryContent: Attribute.RichText;
     SectionBg: Attribute.String;
     ButtonOne: Attribute.String;
     ButtonTwo: Attribute.String;
     ButtonTwoLink: Attribute.String;
     ButtonOneLink: Attribute.String;
+    PageBackground: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

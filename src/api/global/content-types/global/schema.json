@@ -40,6 +40,16 @@
       "type": "component",
       "repeatable": false,
       "component": "global.ministries"
+    },
+    "galleries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::gallery.gallery"
+    },
+    "all_sermons": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::all-sermon.all-sermon"
     }
   }
 }

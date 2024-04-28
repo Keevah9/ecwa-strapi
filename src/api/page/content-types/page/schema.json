@@ -43,9 +43,6 @@
       "type": "uid",
       "targetField": "PageTitle"
     },
-    "PageBackground": {
-      "type": "string"
-    },
     "PageIntroductoryContent": {
       "type": "richtext"
     },
@@ -63,6 +60,9 @@
     },
     "ButtonOneLink": {
       "type": "string"
+    },
+    "PageBackground": {
+      "type": "richtext"
     }
   }
 }
