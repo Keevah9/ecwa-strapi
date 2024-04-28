@@ -45,6 +45,21 @@
     },
     "PageBackground": {
       "type": "string"
+    },
+    "SectionBg": {
+      "type": "string"
+    },
+    "ButtonOne": {
+      "type": "string"
+    },
+    "ButtonOneLink": {
+      "type": "string"
+    },
+    "ButtonTwo": {
+      "type": "string"
+    },
+    "ButtonTwoLink": {
+      "type": "string"
     }
   }
 }
