@@ -1053,7 +1053,7 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
     >;
     all_sermons: Attribute.Relation<
       'api::global.global',
-      'oneToOne',
+      'oneToMany',
       'api::all-sermon.all-sermon'
     >;
     createdAt: Attribute.DateTime;
@@ -1326,6 +1326,57 @@ export interface ApiSermonSermon extends Schema.CollectionType {
   };
 }
 
+export interface ApiVolunteerVolunteer extends Schema.CollectionType {
+  collectionName: 'volunteers';
+  info: {
+    singularName: 'volunteer';
+    pluralName: 'volunteers';
+    displayName: 'Volunteer';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    PageTitle: Attribute.Text;
+    PageIntroductoryContent: Attribute.RichText;
+    Slug: Attribute.UID<'api::volunteer.volunteer', 'PageTitle'>;
+    Pages: Attribute.DynamicZone<
+      [
+        'flexible.gallery',
+        'flexible.grid-item-content',
+        'flexible.has-history',
+        'flexible.has-ministries',
+        'flexible.has-services',
+        'flexible.has-volunteers',
+        'flexible.one-column-content',
+        'flexible.two-column-content'
+      ]
+    >;
+    PageBackgroundImage: Attribute.Media;
+    PageBackground: Attribute.RichText;
+    SectionBg: Attribute.String;
+    ButtonOne: Attribute.String;
+    ButtonOneLink: Attribute.String;
+    ButtonTwo: Attribute.String;
+    ButtonTwoLink: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::volunteer.volunteer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::volunteer.volunteer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -1357,6 +1408,7 @@ declare module '@strapi/types' {
       'api::ministry.ministry': ApiMinistryMinistry;
       'api::page.page': ApiPagePage;
       'api::sermon.sermon': ApiSermonSermon;
+      'api::volunteer.volunteer': ApiVolunteerVolunteer;
     }
   }
 }
