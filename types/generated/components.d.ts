@@ -114,6 +114,12 @@ export interface FlexibleOneColumnContent extends Schema.Component {
     Content: Attribute.RichText;
     OneColMultipleLists: Attribute.Component<'global.grid-items', true>;
     SubTitle: Attribute.String;
+    HasSermons: Attribute.Boolean;
+    Youtube: Attribute.String;
+    Audio: Attribute.String;
+    Pdf: Attribute.String;
+    Pastor: Attribute.String;
+    Category: Attribute.Text;
   };
 }
 
@@ -213,6 +219,7 @@ export interface GlobalGridItems extends Schema.Component {
     email: Attribute.String;
     LinkedIn: Attribute.String;
     Instagram: Attribute.String;
+    Youtube: Attribute.String;
   };
 }
 

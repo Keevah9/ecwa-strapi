@@ -26,6 +26,24 @@
     },
     "SubTitle": {
       "type": "string"
+    },
+    "HasSermons": {
+      "type": "boolean"
+    },
+    "Youtube": {
+      "type": "string"
+    },
+    "Audio": {
+      "type": "string"
+    },
+    "Pdf": {
+      "type": "string"
+    },
+    "Pastor": {
+      "type": "string"
+    },
+    "Category": {
+      "type": "text"
     }
   }
 }
