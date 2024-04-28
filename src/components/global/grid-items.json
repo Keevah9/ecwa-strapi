@@ -72,6 +72,9 @@
     },
     "Instagram": {
       "type": "string"
+    },
+    "Youtube": {
+      "type": "string"
     }
   }
 }
