@@ -932,6 +932,11 @@ export interface ApiEventEvent extends Schema.CollectionType {
     Slug: Attribute.UID<'api::event.event', 'PageTitle'>;
     PageBackground: Attribute.String;
     PageIntroductoryContent: Attribute.RichText;
+    SectionBg: Attribute.String;
+    ButtonOne: Attribute.String;
+    ButtonOneLink: Attribute.String;
+    ButtonTwo: Attribute.String;
+    ButtonTwoLink: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1195,6 +1200,11 @@ export interface ApiMinistryMinistry extends Schema.CollectionType {
     Slug: Attribute.UID<'api::ministry.ministry', 'PageTitle'>;
     PageIntroductoryContent: Attribute.RichText;
     PageBackground: Attribute.String;
+    SectionBg: Attribute.String;
+    ButtonOne: Attribute.String;
+    ButtonOneLink: Attribute.String;
+    ButtonTwo: Attribute.String;
+    ButtonTwoLink: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1283,6 +1293,11 @@ export interface ApiSermonSermon extends Schema.CollectionType {
     >;
     PageIntroductoryContent: Attribute.RichText;
     PageBackground: Attribute.String;
+    SectionBg: Attribute.String;
+    ButtonOne: Attribute.String;
+    ButtonOneLink: Attribute.String;
+    ButtonTwo: Attribute.String;
+    ButtonTwoLink: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
