@@ -1053,7 +1053,7 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
     >;
     all_sermons: Attribute.Relation<
       'api::global.global',
-      'oneToOne',
+      'oneToMany',
       'api::all-sermon.all-sermon'
     >;
     createdAt: Attribute.DateTime;
