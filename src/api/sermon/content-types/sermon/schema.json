@@ -37,7 +37,12 @@
         "flexible.gallery",
         "flexible.grid-item-content",
         "flexible.one-column-content",
-        "flexible.two-column-content"
+        "flexible.two-column-content",
+        "flexible.has-ministries",
+        "flexible.has-volunteers",
+        "flexible.has-services",
+        "global.faq",
+        "global.pastors"
       ]
     },
     "PageIntroductoryContent": {

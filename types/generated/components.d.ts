@@ -36,6 +36,7 @@ export interface FlexibleGallery extends Schema.Component {
       'oneToMany',
       'api::gallery.gallery'
     >;
+    HasPagination: Attribute.Boolean;
   };
 }
 
@@ -287,6 +288,25 @@ export interface GlobalSermons extends Schema.Component {
   };
 }
 
+export interface GlobalTab extends Schema.Component {
+  collectionName: 'components_global_tabs';
+  info: {
+    displayName: 'Tab';
+  };
+  attributes: {};
+}
+
+export interface GlobalTags extends Schema.Component {
+  collectionName: 'components_global_tags';
+  info: {
+    displayName: 'Tags';
+    description: '';
+  };
+  attributes: {
+    Tag: Attribute.String;
+  };
+}
+
 export interface GlobalTwoColContent extends Schema.Component {
   collectionName: 'components_global_two_col_contents';
   info: {
@@ -325,6 +345,8 @@ declare module '@strapi/types' {
       'global.ministries': GlobalMinistries;
       'global.pastors': GlobalPastors;
       'global.sermons': GlobalSermons;
+      'global.tab': GlobalTab;
+      'global.tags': GlobalTags;
       'global.two-col-content': GlobalTwoColContent;
     }
   }
