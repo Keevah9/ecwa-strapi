@@ -848,12 +848,14 @@ export interface ApiAllSermonAllSermon extends Schema.CollectionType {
     singularName: 'all-sermon';
     pluralName: 'all-sermons';
     displayName: 'AllSermons';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     Sermons: Attribute.Component<'global.grid-items'>;
+    Tags: Attribute.Component<'global.tags', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -926,7 +928,12 @@ export interface ApiEventEvent extends Schema.CollectionType {
         'flexible.gallery',
         'flexible.grid-item-content',
         'flexible.one-column-content',
-        'flexible.two-column-content'
+        'flexible.two-column-content',
+        'flexible.has-services',
+        'flexible.has-volunteers',
+        'flexible.has-ministries',
+        'global.faq',
+        'global.pastors'
       ]
     >;
     Slug: Attribute.UID<'api::event.event', 'PageTitle'>;
@@ -1204,7 +1211,14 @@ export interface ApiMinistryMinistry extends Schema.CollectionType {
         'flexible.grid-item-content',
         'flexible.one-column-content',
         'flexible.two-column-content',
-        'flexible.featured-image'
+        'flexible.featured-image',
+        'flexible.has-ministries',
+        'flexible.has-services',
+        'flexible.has-volunteers',
+        'flexible.has-history',
+        'global.faq',
+        'global.campaign-events',
+        'global.pastors'
       ]
     >;
     Slug: Attribute.UID<'api::ministry.ministry', 'PageTitle'>;
@@ -1256,7 +1270,9 @@ export interface ApiPagePage extends Schema.CollectionType {
         'flexible.has-history',
         'flexible.has-volunteers',
         'flexible.has-services',
-        'flexible.has-ministries'
+        'flexible.has-ministries',
+        'global.faq',
+        'global.pastors'
       ]
     >;
     Slug: Attribute.UID<'api::page.page', 'PageTitle'>;
@@ -1298,7 +1314,12 @@ export interface ApiSermonSermon extends Schema.CollectionType {
         'flexible.gallery',
         'flexible.grid-item-content',
         'flexible.one-column-content',
-        'flexible.two-column-content'
+        'flexible.two-column-content',
+        'flexible.has-ministries',
+        'flexible.has-volunteers',
+        'flexible.has-services',
+        'global.faq',
+        'global.pastors'
       ]
     >;
     PageIntroductoryContent: Attribute.RichText;

@@ -33,7 +33,14 @@
         "flexible.grid-item-content",
         "flexible.one-column-content",
         "flexible.two-column-content",
-        "flexible.featured-image"
+        "flexible.featured-image",
+        "flexible.has-ministries",
+        "flexible.has-services",
+        "flexible.has-volunteers",
+        "flexible.has-history",
+        "global.faq",
+        "global.campaign-events",
+        "global.pastors"
       ]
     },
     "Slug": {

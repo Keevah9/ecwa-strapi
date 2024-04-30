@@ -4,7 +4,8 @@
   "info": {
     "singularName": "all-sermon",
     "pluralName": "all-sermons",
-    "displayName": "AllSermons"
+    "displayName": "AllSermons",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,6 +16,12 @@
       "type": "component",
       "repeatable": false,
       "component": "global.grid-items"
+    },
+    "Tags": {
+      "displayName": "Tags",
+      "type": "component",
+      "repeatable": true,
+      "component": "global.tags"
     }
   }
 }
