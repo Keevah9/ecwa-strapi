@@ -34,7 +34,7 @@
       "displayName": "FAQ",
       "type": "component",
       "repeatable": true,
-      "component": "global.faq"
+      "component": "flexible.faq"
     },
     "PageIntroductoryContent": {
       "type": "richtext"

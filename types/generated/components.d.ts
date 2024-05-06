@@ -1,5 +1,18 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface FlexibleFaq extends Schema.Component {
+  collectionName: 'components_global_faqs';
+  info: {
+    displayName: 'FAQ';
+    icon: 'apps';
+    description: '';
+  };
+  attributes: {
+    Question: Attribute.Text;
+    Answer: Attribute.RichText;
+  };
+}
+
 export interface FlexibleFeaturedImage extends Schema.Component {
   collectionName: 'components_flexible_featured_images';
   info: {
@@ -74,6 +87,17 @@ export interface FlexibleHasMinistries extends Schema.Component {
   };
   attributes: {
     HasMinistries: Attribute.Boolean;
+  };
+}
+
+export interface FlexibleHasPastors extends Schema.Component {
+  collectionName: 'components_flexible_has_pastors';
+  info: {
+    displayName: 'HasPastors';
+    icon: 'apps';
+  };
+  attributes: {
+    HasPastors: Attribute.Boolean;
   };
 }
 
@@ -166,19 +190,6 @@ export interface GlobalContact extends Schema.Component {
     SectionTitle: Attribute.String;
     SubTitle: Attribute.String;
     Content: Attribute.RichText;
-  };
-}
-
-export interface GlobalFaq extends Schema.Component {
-  collectionName: 'components_global_faqs';
-  info: {
-    displayName: 'FAQ';
-    icon: 'apps';
-    description: '';
-  };
-  attributes: {
-    Question: Attribute.Text;
-    Answer: Attribute.RichText;
   };
 }
 
@@ -326,19 +337,20 @@ export interface GlobalTwoColContent extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'flexible.faq': FlexibleFaq;
       'flexible.featured-image': FlexibleFeaturedImage;
       'flexible.flexible': FlexibleFlexible;
       'flexible.gallery': FlexibleGallery;
       'flexible.grid-item-content': FlexibleGridItemContent;
       'flexible.has-history': FlexibleHasHistory;
       'flexible.has-ministries': FlexibleHasMinistries;
+      'flexible.has-pastors': FlexibleHasPastors;
       'flexible.has-services': FlexibleHasServices;
       'flexible.has-volunteers': FlexibleHasVolunteers;
       'flexible.one-column-content': FlexibleOneColumnContent;
       'flexible.two-column-content': FlexibleTwoColumnContent;
       'global.campaign-events': GlobalCampaignEvents;
       'global.contact': GlobalContact;
-      'global.faq': GlobalFaq;
       'global.gallery': GlobalGallery;
       'global.grid-items': GlobalGridItems;
       'global.hero-slider': GlobalHeroSlider;

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_flexible_has_pastors",
+  "info": {
+    "displayName": "HasPastors",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "HasPastors": {
+      "type": "boolean"
+    }
+  }
+}

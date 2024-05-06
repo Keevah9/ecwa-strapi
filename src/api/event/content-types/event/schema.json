@@ -37,8 +37,9 @@
         "flexible.has-services",
         "flexible.has-volunteers",
         "flexible.has-ministries",
-        "global.faq",
-        "global.pastors"
+        "flexible.faq",
+        "global.pastors",
+        "flexible.has-pastors"
       ]
     },
     "Slug": {
