@@ -41,8 +41,8 @@
         "flexible.has-ministries",
         "flexible.has-volunteers",
         "flexible.has-services",
-        "global.faq",
-        "global.pastors"
+        "flexible.faq",
+        "flexible.has-pastors"
       ]
     },
     "PageIntroductoryContent": {

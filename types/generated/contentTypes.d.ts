@@ -932,8 +932,9 @@ export interface ApiEventEvent extends Schema.CollectionType {
         'flexible.has-services',
         'flexible.has-volunteers',
         'flexible.has-ministries',
-        'global.faq',
-        'global.pastors'
+        'flexible.faq',
+        'global.pastors',
+        'flexible.has-pastors'
       ]
     >;
     Slug: Attribute.UID<'api::event.event', 'PageTitle'>;
@@ -981,7 +982,7 @@ export interface ApiFrequentlyAskedQuestionFrequentlyAskedQuestion
       'api::frequently-asked-question.frequently-asked-question',
       'PageTitle'
     >;
-    FAQs: Attribute.Component<'global.faq', true>;
+    FAQs: Attribute.Component<'flexible.faq', true>;
     PageIntroductoryContent: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -1216,9 +1217,9 @@ export interface ApiMinistryMinistry extends Schema.CollectionType {
         'flexible.has-services',
         'flexible.has-volunteers',
         'flexible.has-history',
-        'global.faq',
+        'flexible.faq',
         'global.campaign-events',
-        'global.pastors'
+        'flexible.has-pastors'
       ]
     >;
     Slug: Attribute.UID<'api::ministry.ministry', 'PageTitle'>;
@@ -1271,8 +1272,8 @@ export interface ApiPagePage extends Schema.CollectionType {
         'flexible.has-volunteers',
         'flexible.has-services',
         'flexible.has-ministries',
-        'global.faq',
-        'global.pastors'
+        'flexible.faq',
+        'flexible.has-pastors'
       ]
     >;
     Slug: Attribute.UID<'api::page.page', 'PageTitle'>;
@@ -1318,8 +1319,8 @@ export interface ApiSermonSermon extends Schema.CollectionType {
         'flexible.has-ministries',
         'flexible.has-volunteers',
         'flexible.has-services',
-        'global.faq',
-        'global.pastors'
+        'flexible.faq',
+        'flexible.has-pastors'
       ]
     >;
     PageIntroductoryContent: Attribute.RichText;
