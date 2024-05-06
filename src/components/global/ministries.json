@@ -2,7 +2,8 @@
   "collectionName": "components_global_ministries",
   "info": {
     "displayName": "Ministries",
-    "icon": "apps"
+    "icon": "apps",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -16,6 +17,9 @@
       "type": "component",
       "repeatable": true,
       "component": "global.grid-items"
+    },
+    "SectionContent": {
+      "type": "richtext"
     }
   }
 }
