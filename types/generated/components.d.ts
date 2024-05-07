@@ -258,11 +258,13 @@ export interface GlobalMinistries extends Schema.Component {
   info: {
     displayName: 'Ministries';
     icon: 'apps';
+    description: '';
   };
   attributes: {
     SubTitle: Attribute.String;
     SectionTitle: Attribute.String;
     Ministries: Attribute.Component<'global.grid-items', true>;
+    SectionContent: Attribute.RichText;
   };
 }
 
