@@ -1008,6 +1008,7 @@ export interface ApiGalleryGallery extends Schema.CollectionType {
     singularName: 'gallery';
     pluralName: 'galleries';
     displayName: 'Gallery';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1015,6 +1016,8 @@ export interface ApiGalleryGallery extends Schema.CollectionType {
   attributes: {
     Title: Attribute.String;
     Image: Attribute.Media;
+    SectionContent: Attribute.RichText;
+    SectionTitle: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
